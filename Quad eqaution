@@ -1,0 +1,89 @@
+# A program to calculate quadratic equations using functions
+import sys
+import math
+from enum import Enum
+# Copyright: OYINLOLA TIMILEHIN,@)2025
+print()
+# Input section for the variables
+OPER= True
+# Copyright: OYINLOLA TIMILEHIN,@)2025
+def CALCULATION():
+   A = input("INPUT the coefficient of x^2(x-squared):\n")
+   if A == str : 
+       print(A + "x^2")
+   elif A == 1:
+       print("x^2")
+   else:
+      sys.exit
+   print()
+   B = input("INPUT the coefficient of x:\n ")
+   if B == str :
+       print(B + "x")
+   elif B == "1":
+      print("x")
+   else:
+       sys.exit
+   print()
+   C = input("INPUT the constant C\n")
+   if C == str :
+        print(C)
+   else:
+       sys.exit
+   print()
+   print()
+# Basic Conditions on what to do 
+   if A == "1" and B == "1":
+       print("EQUATION:   " + "x^2 " + "+ " + "x "  +  "+ "  +  C)
+   elif A == "1" :
+      print("EQUATION is " + "x^2 " + "+ " + B + "x "  +  "+ "  +  C)
+   elif B == "1":
+      print("EQUATION is " + A + "x^2 " + "+ " + "x "  +  "+ "  +  C)
+   elif A == "" or B == "" :
+       sys.exit
+   else:
+       print("EQUATION is " + A + "x^2 " + "+ " + B + "x "  +  "+ "  +  C)
+
+   print()         
+# Section for calculations using functions
+   def quadEqu():
+      AI = int(A)
+      BI = int(B)
+      CI = int(C)
+# EQU process
+      BI_sq = BI*BI
+      doubleA = 2*AI
+      allUnderSQ= BI_sq + (-4*AI*CI)
+      allUnderSQR=(math.sqrt(allUnderSQ))
+      allUnderSQRNumSum1 = -BI + allUnderSQR
+      allUnderSQRNumSum2 = -BI - allUnderSQR
+      allUnderSQRNumSum1Div = allUnderSQRNumSum1/doubleA
+      allUnderSQRNumSum2Div = allUnderSQRNumSum2/doubleA
+# Display of result
+      print()
+      input("Enter any key to display result👆🏿")
+      print()
+      print()
+      print("EITHER  ⏩⏩⏩  X = " +  str(allUnderSQRNumSum1Div))
+      print()
+      print("OR      ⏩⏩⏩  X = " + str(allUnderSQRNumSum2Div))
+
+   quadEqu()
+CALCULATION()
+# Question to retry 
+print()
+print()
+retryCalc = input("Do you care to retry😊😚:\nY for YES✅ \nN for NO👎🏿👎🏿\n\n")
+if retryCalc.lower().strip() == "Y":
+    CALCULATION()
+else:
+     print()
+     sys.exit("Thank you for using the program😁🎉🎉")
+     
+     
+     
+# Copyright: OYINLOLA TIMILEHIN,@)2025 
+
+# Copyright: OYINLOLA TIMILEHIN,@)2025
+
+
+
