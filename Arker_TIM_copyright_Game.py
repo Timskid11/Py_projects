@@ -199,5 +199,5 @@ copyrightByTimilehinOyinlolaApril2025SecondProof = input("What are your reviews 
 print(copyrightByTimilehinOyinlolaApril2025SecondProof)
 print()
 print("Congratulations "+ copyrightByTimilehinOyinlolaApril2025+",You are truly a WINNER😁😁😄")
-sys.exit
+sys.exit("Thanks for playing")
 
